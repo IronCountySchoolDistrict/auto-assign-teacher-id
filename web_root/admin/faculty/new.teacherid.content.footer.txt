@@ -1,0 +1,28 @@
+<!-- begin Auto Assign Teacher ID content -->
+<div id="qunit"></div>
+<!-- begin PS-DATA -->
+<div id="ps-data"
+     data-ps='
+        {
+            "teacherId": ~[tlist_sql;
+                SELECT
+                    (MAX(to_number(TeacherNumber))+1)
+                FROM TEACHERS
+                WHERE TeacherNumber is not null
+                ]
+                    ~(id)
+                [/tlist_sql]
+        }
+     '
+        ></div>
+<!-- end PS-DATA -->
+
+<script src="/scripts/AutoAssignTeacherId/autoassignteacherid.js"></script>
+
+~[if.~[gpv:testing]=true]
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qunit/1.13.0/qunit.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qunit/1.13.0/qunit.js"></script>
+<script src="/scripts/AutoAssignTeacherId/tests.js"></script>
+~[/if]
+
+<!-- end Auto Assign Teacher ID content -->
