@@ -16,6 +16,6 @@
         ></div>
 <!-- end PS-DATA -->
 
-<script src="/scripts/AutoAssignTeacherId/autoassignteacherid.js"></script>
+<script src="<%= image_server_url %>/scripts/auto-assign-teacher-id/main.js"></script>
 
 <!-- end Auto Assign Teacher ID content -->

@@ -1,0 +1,19 @@
+{
+  "name": "auto-assign-teacher-id",
+  "version": "4.0",
+  "description": "PowerSchool customization that automatically assigns the ID for a new staff member",
+  "main": "",
+  "scripts": {
+    "test": "mocha-casperjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/auto-assign-teacher-id.git"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/auto-assign-teacher-id/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/auto-assign-teacher-id#readme"
+}
