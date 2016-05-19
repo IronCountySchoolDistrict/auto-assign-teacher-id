@@ -1,12 +1,12 @@
 <queries>
-  <query flattened="true" name="org.irondistrict.autoid.queries.teacher" coreTable="teachers">
+  <query flattened="true" name="org.irondistrict.autoid.queries.teacher" coreTable="users">
     <columns>
-      <column column="teachers.teacherNumber">TeacherNumber</column>
+      <column column="users.teacherNumber">TeacherNumber</column>
     </columns>
     <sql>
       <![CDATA[
         SELECT(MAX(to_number(TeacherNumber))+1) as teacherNumber
-        FROM teachers
+        FROM users
         WHERE LENGTH(TRIM(TRANSLATE(TeacherNumber, ' +-.0123456789', ' '))) is null
       ]]>
     </sql>
