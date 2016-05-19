@@ -1,0 +1,14 @@
+<queries>
+  <query flattened="true" name="org.irondistrict.autoid.queries.teacher" coreTable="teachers">
+    <columns>
+      <column column="teachers.teacherNumber">TeacherNumber</column>
+    </columns>
+    <sql>
+      <![CDATA[
+        SELECT(MAX(to_number(TeacherNumber))+1) as teacherNumber
+        FROM teachers
+        WHERE LENGTH(TRIM(TRANSLATE(TeacherNumber, ' +-.0123456789', ' '))) is null
+      ]]>
+    </sql>
+  </query>
+</queries>

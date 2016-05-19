@@ -1,0 +1,5 @@
+<permission_mappings>
+  <permission name='/admin/home.html'>
+    <implies allow="post">/ws/schema/query/org.irondistrict.autoid.queries.teacher</implies>
+  </permission>
+</permission_mappings>
