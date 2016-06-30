@@ -6,6 +6,10 @@
         version="1.0.0"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 
+    <access_request>
+      <field table="USERS" field="TEACHERNUMBER" access="ViewOnly" />
+    </access_request>
+
     <publisher name="Iron County School District Data Team">
         <contact email="data@ironmail.org"/>
     </publisher>

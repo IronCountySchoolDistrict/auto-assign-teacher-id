@@ -1,31 +1,26 @@
 /*global $j*/
-var custom = {};
+(function($){
+  $(document).ready(function () {
 
-custom.parsePsData = function () {
-    'use strict';
-    var data = {};
-    try {
-        data.psData = $j.parseJSON($j('#ps-data').data().ps);
-    } catch (e) {
-        data.exceptionMsg = e.message;
-    }
-    return data;
-};
+    //fetch js https://github.com/github/fetch json example
+    fetch('/ws/schema/query/org.irondistrict.autoid.queries.teacher', {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    })
+      .then(function(response){
+        return response.json()
+      }).then(function (json) {
+        var teacherIdField = $('[name=teachernumber]')[0];
+        teacherIdField.value = json.record[0].teachernumber;
+        teacherIdField.setAttribute('readonly', 'readonly');
+      }).catch(function(ex){
+        console.log('parsing error', ex)
+      })
 
-custom.insertTeacherId = function (psData) {
-    'use strict';
-    var teacherIdField = $j('[name=teachernumber]')[0];
-    teacherIdField.value = psData.teacherId;
-    teacherIdField.setAttribute('readonly', 'readonly');
-};
 
-custom.main = function () {
-    'use strict';
-    var psData = custom.parsePsData().psData;
-    custom.insertTeacherId(psData);
-};
-
-$j(document).ready(function () {
-    'use strict';
-    custom.main();
-});
+  });
+})($j);
