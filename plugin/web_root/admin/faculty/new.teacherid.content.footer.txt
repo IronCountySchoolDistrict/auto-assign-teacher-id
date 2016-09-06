@@ -1,5 +1,4 @@
 <!-- begin Auto Assign Teacher ID content -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
 <script src="/scripts/auto-assign-teacher-id/js/main.js"></script>
-
 <!-- end Auto Assign Teacher ID content -->
