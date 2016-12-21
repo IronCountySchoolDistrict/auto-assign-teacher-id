@@ -1,10 +1,10 @@
 <!-- begin Auto Assign Teacher ID content -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.js"></script>
 
 <script src="">
   require.config({
     paths: {
-        autoAssignTeacherId: '/scripts/auto-assign-teacher-id/js/main.js'
+        autoAssignTeacherId: '/scripts/auto-assign-teacher-id/js/main'
     }
   });
 
