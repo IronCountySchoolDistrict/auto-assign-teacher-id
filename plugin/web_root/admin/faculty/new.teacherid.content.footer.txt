@@ -1,7 +1,7 @@
 <!-- begin Auto Assign Teacher ID content -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.js"></script>
 
-<script src="">
+<script>
   require.config({
     paths: {
         autoAssignTeacherId: '/scripts/auto-assign-teacher-id/js/main'
