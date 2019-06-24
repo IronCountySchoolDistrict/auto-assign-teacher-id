@@ -1,17 +1,7 @@
 <!-- begin Auto Assign Teacher ID content -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.js"></script>
 
-<script>
-  require.config({
-    paths: {
-        autoAssignTeacherId: '/scripts/auto-assign-teacher-id/js/main'
-    }
-  });
-
-  require(['autoAssignTeacherId'], (autoAssignTeacherId) => {
-    autoAssignTeacherId.default();
-  });
-</script>
+<script src="/scripts/auto-assign-teacher-id/js/teacherId.js"></script>
 <!-- end Auto Assign Teacher ID content -->
 
 <!-- begin PS-DATA -->
