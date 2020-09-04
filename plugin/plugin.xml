@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         description="Auto generate the next-highest number for the new staff form."
         name="Auto Assign Teacher ID"
-        version="1.0.0"
+        version="1.0.1"
         xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 
     <access_request>
