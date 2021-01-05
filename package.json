@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "axios": "^0.21.1",
     "bl": "2.2.1",
     "kind-of": "6.0.3",
     "lodash.template": "^4.5.0",
